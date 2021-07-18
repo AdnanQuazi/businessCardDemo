@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.card{
+    width: 55rem;
+    height: 30rem;
+    border-radius: 1rem;
+    background-color: #171717;
+    box-shadow: -2rem 2rem 2rem grey;
+    
+}
+h1{
+    color: white;
+    font-size: 6rem;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    top: calc(50% - 7.5rem);
+    transform: translate(0,-50%);
+    
+}
+img{
+    
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+    width: 7.5rem;
+    height: 7.5rem;
+}
+@media (max-width: 768px) {
+    html{
+        font-size: 45%;
+    }
+}
+@media (max-width: 459px) {
+    html{
+        font-size: 30%;
+    }
+}
