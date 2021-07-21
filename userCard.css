@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    margin-top: 15rem;
+    height: 100vh;
+    overflow-y: hidden;
+   
+}
+.card{
+    
+    
+    
+    margin-left: 50%;
+    transform: translate(-50%);
+    width: 55rem;
+    height: 32rem;
+    border-radius: 1rem;
+    background-color: #171717;
+    box-shadow: -2rem 2rem 1.5rem grey;
+    
+}
+h1{
+    color: white;
+    font-size: 6rem;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    top: calc(50% - 7.5rem);
+    transform: translate(0,-50%);
+    
+}
+img{
+    
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+    width: 7.5rem;
+    height: 7.5rem;
+}
+.icons{
+    display: flex;
+    margin-left: 50%;
+    transform: translate(-50%);
+    position: relative;
+    width: 60rem;
+    height: max-content;
+    margin-top: 5rem;
+    border-radius: 5px;
+    justify-content: space-evenly;
+}
+.call,.wapp,.loc,.globe{
+    position: relative;
+    color: black;
+    font-size: 6rem;
+    cursor: pointer;
+}
+.d{
+    position: absolute;
+    z-index: -1;
+    top: 32rem;
+    width: 85vw;
+    left: 50%;
+    transform: translate(-50%);
+    height: 30rem;
+    background-color: lightgray;
+    opacity: 0.3;
+    
+}
+@media (max-width: 768px) {
+    html{
+        font-size: 45%;
+    }
+}
+@media (max-width: 459px) {
+    html{
+        font-size: 30%;
+    }
+}
+@media (min-width: 1080px) {
+    .d{
+        width: 65vw;
+    }
+}
