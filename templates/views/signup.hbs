@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Open+Sans:wght@600&family=Roboto&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <title>Sign Up</title>
+</head>
+<body>
+
+    {{#if error}}
+    <div class="error-div" >
+        <i class="fas fa-exclamation-circle err-icon"></i>
+        <span>Account already exist</span>
+    </div>
+      {{/if}}
+    {{>navbar}}
+    <div class="container">
+       
+       
+    <form onsubmit="return validation()" action="/register" method="POST">
+        <div class="deatils">
+            <span class="heading">SIGN UP</span>
+            <div class="input-details">
+                
+                <i class="fas fa-user-alt sign-icons"></i>
+                <input class="inpt" id="firstname" type="text" name="Firstname" placeholder="Full Name" required>
+                <span class="text-danger" id="danger-fname"></span>
+            </div>
+            
+            <div class="input-details">
+                <i class="fas fa-envelope sign-icons"></i>
+                 <input class="inpt" id="email" type="email" name="email" placeholder="E-Mail"  required>
+                 <span class="text-danger" id="danger-email"></span>
+            </div>
+            <div class="input-details">
+                <i class="fas fa-mobile sign-icons"></i>
+                 <input class="inpt" id="phone" type="tel" name="phone" placeholder="Contact Number" required>
+                 <span class="text-danger" id="danger-phone"></span>
+            </div>
+            <div class="input-details">
+                <i class="fas fa-lock sign-icons"></i>
+                <input class="inpt pass" id="pass" type="password" placeholder="Password" name="password"  required>
+                <span class="icons">
+                        <i class="far fa-eye visible" id="visible"></i>
+                        <i class="far fa-eye-slash invisible" id="invisible"></i>
+                    </span>
+                    
+                <span class="text-danger" id="danger-pass"></span>
+                
+                    
+                
+                
+            </div>
+            <div class="input-details">
+                <i class="fas fa-lock sign-icons"></i>
+                <input class="inpt" type="password" placeholder="Confirm Password" name="conpassword">
+                </div>
+                <div class="input-details">
+                    <i class="fas fa-mars sign-icons"></i>
+                <select name="gender" id="gender">
+                   <option value="Male">Male</option>
+                   <option value="Female">Female</option>
+                   <option value="Undefined">Prefer not to say</option>
+                </select>
+               </div>
+                </div>
+
+                
+               
+               
+            
+           
+           
+            
+           
+    
+  
+
+<div class="submit-btn-con">
+               <button type="submit" class="submit-btn">Sign Up</button>
+               <a class="log" href="/login">Sign In</a>
+           </div>
+</form>
+<img src="../../images/signup.png" alt="" >
+</div> 
+    
+</body>
+<script src="js/index.js"></script>
+</html>

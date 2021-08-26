@@ -1,0 +1,27 @@
+ <nav>
+    <h2 class="logo">noxsh</h2>
+    <ul class="nav-links">
+        <li><a class="active" href ="/">Home</a></li>
+        <li><a href ="#sec2">Products</a></li>
+        <li><a href ="#">Contact Us</a></li>
+        {{#if token}}
+        <li><a href="/myprofile">
+            
+            <button class="userProf" ><i class="fas fa-user-alt"></i> {{userName}}</button>
+        
+        </a></li>
+        {{else}}
+        <li><a href="/register"><button class="head-btn" >Sign up</button></a></li>
+        {{/if}}
+
+
+        
+    </ul>
+    
+    <div class="burger" id="burger">
+      
+        <i class="fas fa-bars burger-icn" id="fas"></i>
+         <i class="fas fa-times burger-icn" id="fas1"></i>
+    </div>
+    
+</nav>
